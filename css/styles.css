@@ -19,8 +19,8 @@ h6 {
 
 p {
   font-family: 'EB Garamond', serif;
-  margin: 18px 0 23px;
-  line-height: 25px;
+  margin: 20px 0 23px;
+  line-height: 157%;
   text-align: justify;
 }
 
@@ -37,7 +37,6 @@ header {
   right: 0;
   padding: 12px 0 10px 10px;
   filter: drop-shadow(0px 0px 2px black);
-  z-index: 10;
 }
 
 header nav ul li {
@@ -48,7 +47,7 @@ header nav a {
   color: #ababab;
   text-decoration: none;
   font-family: 'IM Fell English';
-  font-size: 14px;
+  font-size: .89rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0 4px;
@@ -61,19 +60,19 @@ header nav a:hover {
 
 .spacers {
   color: #59a5af;
-  opacity: .6
+  opacity: .6;
 }
 
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: .5px;
-  opacity: .3
-}
+/*======================================
+
+        Hamburger Mobile Button
+
+=======================================*/
+
+
+
+
+
 
 /*======================================
 
@@ -89,6 +88,14 @@ hr {
   text-align: center;
 }
 
+.gorey-logo {
+  max-width: 41%;
+}
+
+.mobile-header img {
+  max-width: 100%;
+  padding-top: 40px;
+}
 
 /*======================================
 
@@ -96,9 +103,31 @@ hr {
 
 =======================================*/
 
-.container {
+.container1 {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 90%;
+  margin-bottom: -3.2%;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: .5%;
+}
+
+.bio img {
+  max-width: 100%;
+  padding: 0px 11px;
+}
+
+figcaption {
+  font-family: 'IM Fell English', serif;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 6.25%;
 }
 
 /*======================================
@@ -108,31 +137,15 @@ hr {
 =======================================*/
 
 .gorey-who h1 {
-  font-size: 52px;
+  font-size: 3.25rem;
   text-align:center;
   letter-spacing: 1.3px;
+  border-bottom: 1px solid #e6e7e8;
+  padding-bottom: 19px;
 }
 
 .gorey-bio {
   margin: -25px -30px;
-}
-
-.bio-image {
-  width: 230px;
-  display: inline-block;
-  margin-top: 22px;
-  padding: 28px 40px 32px;
-}
-
-.bio-image img {
-  width: 300px;
-}
-
-.subtext {
-  position: absolute;
-  margin: 4px 63px 0px;
-  font-size: 15px;
-  letter-spacing: .5px;
 }
 
 span {
@@ -140,11 +153,16 @@ span {
 }
 
 .gorey-who {
-    padding: 31px 0 56px;
+  padding: 29px 0 56px;
 }
 
-.bio-image.up {
-    margin: -3px 0px 0px;
+.p-line {
+  border-bottom: 1px solid #e6e7e8;
+  padding-bottom: 32px;
+}
+
+.p-top {
+  margin-top: 2.5%;
 }
 
 /*======================================
@@ -158,198 +176,8 @@ span {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  padding: 300px 0;
+  padding: 400px 0;
 }
-
-/*======================================
-
-        Museum Section
-
-=======================================*/
-.museum {
-  padding: 26px 0px;
-}
-
-.museum h2 {
-  text-align: center;
-  font-size: 44px;
-  letter-spacing: 1px;
-}
-
-.city {
-  background: #f2f2f2;
-  width: 250px;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 35px 21px;
-}
-
-.city img {
-  width: 250px;
-}
-
-.capecod a {
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 10px 87px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-}
-
-.inside a {
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 10px 84px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-}
-
-.artworks a {
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 10px 80px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-}
-
-.city a:hover {
-  background: #59a5af;
-  transition: .3s;
-}
-
-.city h3 {
-  text-align: center;
-  margin-top: 6px;
-  font-size: 20px;
-  letter-spacing: 0.3px;
-}
-
-.city p {
-  text-align: left;
-  margin: 6px 0px 24px;
-  line-height: 22px;
-}
-
-/*======================================
-
-        Bottom Image Break
-
-=======================================*/
-
-.section-break-bottom {
-  background: url('../images/gorey-bottom-image.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-  padding: 300px 0;
-}
-
-/*======================================
-
-        Contact Section
-
-=======================================*/
-
-.contact-section {
-  background: #f2f2f2;
-  padding: 2px 24px 21px;
-  width: 630px;
-  margin: 19px auto;
-}
-
-.container h2 {
-  text-align: center;
-  font-size: 42px;
-  letter-spacing: 1px;
-  margin: 28px auto 7px;
-}
-
-.gorey-contact {
-  margin: 20px 0px;
-}
-
-.gorey-contact div {
-  margin-bottom: 10px;
-}
-
-.label_input_wrap {
-  vertical-align: top;
-  display: block;
-  font-family: 'IM Fell English';
-  margin: -9px 0px 2px;
-  padding: 12px 0px 2px;
-}
-
-.gorey-contact input,
-.gorey-contact textarea {
-  border-radius: 3px;
-  width: 99%;
-  padding: 9px 0px 9px 8px;
-}
-
-textarea#comments {
-  font-family: sans-serif;
-  font-size: 13px;
-}
-
-.submit input {
-  background: #333;
-  color: white;
-  font-family:'EB Garamond', serif;
-  border-radius: 3px;
-  border: none;
-}
-
-select#state {
-  width: 41%;
-  padding: 6px 5px;
-}
-
-.submit-bottom input {
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 7px 112px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-  margin: 14px 0px 10px;
-}
-
-div#special {
-  width: 44%;
-  margin: 0px auto;
-}
-
-.submit-bottom input:hover {
-  background: #59a5af;
-  transition: .3s;
-}
-
-.address p {
-  margin-top: 25px;
-  font-family: 'IM Fell English';
-  font-size: 16.5px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: .5px;
-}
-
-.address a {
-  text-decoration: none;
-  color: #5e7942;
-  font-family: 'EB Garamond';
-}
-
-
-iframe {
-  margin-top: 5px;
-}
-
 
 /*======================================
 
@@ -360,7 +188,7 @@ iframe {
 footer {
   background: #000;
   text-align: center;
-  margin: 24px auto -1px;
+  margin: 0px auto -1px;
   padding: 0px 0px 3px;
 }
 
@@ -376,8 +204,46 @@ footer img {
   text-align: center;
   margin: -14px auto 13px;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: .6rem;
   opacity: .5;
   text-transform: uppercase;
   letter-spacing: .7px;
+}
+
+/*======================================
+
+        Media Queries
+
+=======================================*/
+
+@media(max-width: 260px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 385px) {
+  .gorey-who h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media(min-width: 900px) {
+  .mobile-header {
+    display: flex;
+    max-width: 100%;
+    margin-top: 3%;
+    display: none;
+  }
+}
+
+@media(max-width: 900px) {
+  .hero-image-section {
+    max-width: 100%;
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
+    }
 }
