@@ -40,9 +40,9 @@
           <li><a class="spacers">|</a></li>
           <li><a href="#bio">Bio</a></li>
           <li><a class="spacers">|</a></li>
-          <li><a href="#">Museum</a></li>
+          <li><a href="#museum">Museum</a></li>
           <li><a class="spacers">|</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -151,7 +151,48 @@
           </div>
 
         </section>
-      </div>
+
+        <section class="section-break-bottom"></section>
+
+        <div class="container">
+          <h2>Contact</h2>
+          <section class="contact-section" id="contact">
+            <form class="gorey-contact" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+              <div class="first-name">
+                <label for="firstname" class="label_input_wrap">First Name:</label>
+                <input type="text" name="req_firstname" placeholder="Your First Name Here" id="firstname" />
+              </div>
+
+              <div class="last-name">
+                <label for="lastname" class="label_input_wrap">Last Name:</label>
+                <input type="text" name="lastname" placeholder="Your Last Name Here" id="lastname" required />
+              </div>
+
+              <div class="email">
+                <label for="email" class="label_input_wrap">eMail:</label>
+                <input type="email" name="req_email" placeholder="Your Email Here" id="email" />
+              </div>
+
+              <div class="tel">
+                <label for="telephone" class="label_input_wrap">Telephone:</label>
+                <input type="tel" name="telephone" placeholder="Your Number Here" id="telephone" />
+              </div>
+
+              <div class="comments">
+                <label for="comments" class="label_input_wrap">Comments:</label>
+                <textarea name="comments" maxlength="1000" cols="55" rows="15" placeholder="Insert Message Here" id="comments"></textarea>
+              </div>
+
+              <div class="submit-bottom" id="special" >
+                <input type="submit" value="Send">
+              </div>
+
+            </form>
+
+
+
+
 
     </main>
 

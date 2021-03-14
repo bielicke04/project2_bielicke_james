@@ -35,7 +35,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 12px 0 12px 10px;
+  padding: 12px 0 12px 1%;
   filter: drop-shadow(0px 0px 2px black);
 }
 
@@ -119,7 +119,7 @@ header nav a:hover {
   background-image: url('../images/gorey-main-image-flat.jpg');
   background-attachment: fixed;
   background-size:cover;
-  padding: 150px 0 150px 30px;
+  padding: 150px 0 150px 2%;
   text-align: center;
 }
 
@@ -198,6 +198,20 @@ span {
 
 .p-top {
   margin-top: 2.5%;
+}
+
+/*======================================
+
+        Middle Image Break
+
+=======================================*/
+
+.section-break {
+  background: url('../images/gorey-middle-image-color.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  padding: 400px 0;
 }
 
 /*======================================
@@ -336,13 +350,115 @@ span {
 
 =======================================*/
 
-.section-break {
-  background: url('../images/gorey-middle-image-color.jpg');
+.section-break-bottom {
+  background: url('../images/gorey-bottom-image.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  padding: 400px 0;
+  padding: 300px 0;
 }
+
+/*======================================
+
+        Form Section
+
+=======================================*/
+
+.contact-section {
+  background: #f2f2f2;
+  padding: 2px 2% 21px;
+  width: 69%;
+  margin: 19px auto;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 32px 0 22px;
+  letter-spacing: 1.3px;
+}
+
+.gorey-contact {
+  margin: 20px 0px;
+}
+
+.gorey-contact div {
+  margin-bottom: 10px;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+  display: block;
+  font-family: 'IM Fell English';
+  margin: -9px 0 2px;
+  padding: 12px 0 2px;
+}
+
+.gorey-contact input,
+.gorey-contact textarea {
+  border-radius: 3px;
+  width: 99%;
+  padding: 9px 0px 9px 8px;
+}
+
+textarea#comments {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.submit input {
+  background: #333;
+  color: white;
+  font-family:'EB Garamond', serif;
+  border-radius: 3px;
+  border: none;
+}
+
+select#state {
+  width: 41%;
+  padding: 6px 5px;
+}
+
+.submit-bottom input {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 7px 28%;
+  border-radius: 3px;
+  letter-spacing: .2px;
+  margin: 14px 0 10px;
+}
+
+div#special {
+  width: 44%;
+  margin: 0px auto;
+}
+
+.submit-bottom input:hover {
+  background: #59a5af;
+  transition: .3s;
+}
+
+.address p {
+  margin-top: 25px;
+  font-family: 'IM Fell English';
+  font-size: 16.5px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+.address a {
+  text-decoration: none;
+  color: #5e7942;
+  font-family: 'EB Garamond';
+}
+
+
+
+
 
 /*======================================
 
@@ -429,6 +545,10 @@ footer img {
     font-size: 2.25rem;
     margin: 25px 0 15px;
     letter-spacing: .5px;
+  }
+
+  .contact-section {
+    width: 90%;
   }
 }
 
