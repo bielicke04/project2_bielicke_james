@@ -19,8 +19,8 @@ h6 {
 
 p {
   font-family: 'EB Garamond', serif;
-  margin: 20px 0 23px;
-  line-height: 157%;
+  margin: 20px 0 27px;
+  line-height: 155%;
   text-align: justify;
 }
 
@@ -205,83 +205,130 @@ span {
         Museum Section
 
 =======================================*/
-.container3 {
+
+.flex-items {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  align-content: center;
-  max-width: 100%;
-  margin-bottom: .5%;
+  align-items: center;
 }
 
 .museum {
-  padding: 26px 0px;
+  margin-bottom: 70px;
 }
-
 .museum h2 {
   text-align: center;
-  font-size: 44px;
-  letter-spacing: 1px;
+  font-size: 3rem;
+  margin: 32px 0 22px;
+  letter-spacing: 1.3px;
 }
 
-.city {
-  flex-wrap: wrap;
-  justify-content: center;
+.museum img {
+  width: 85%;
+  padding: 22px 0 8px;
+}
+
+.house {
+  width: 30%;
   background: #f2f2f2;
-  width: 25%;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 35px 21px;
+  margin: 0 1%;
 }
 
-.city img {
-  width: 100%;
+.house div {
+  height: 220px;
 }
 
-.capecod a {
+.house a {
   background: #333;
   color: white;
   text-decoration: none;
-  padding: 10px 87px;
+  padding: 10px 28%;
   border-radius: 3px;
   letter-spacing: .2px;
 }
 
-.inside a {
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 10px 84px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-}
-
-.artworks a {
-  background: #333;
-  color: white;
-  text-decoration: none;
-  padding: 10px 80px;
-  border-radius: 3px;
-  letter-spacing: .2px;
-}
-
-.city a:hover {
+.house a:hover {
   background: #59a5af;
   transition: .3s;
 }
 
-.city h3 {
-  text-align: center;
-  margin-top: 6px;
-  font-size: 20px;
-  letter-spacing: 0.3px;
+.house h3 {
+  font-size: 1.5rem;
 }
 
-.city p {
-  text-align: left;
-  margin: 6px 0px 24px;
-  line-height: 22px;
+.house p {
+  padding: 0 9%;
+  margin-top: 7px;
 }
+
+
+.store {
+  width: 30%;
+  background: #f2f2f2;
+  margin: 0 1%;
+}
+
+.store div {
+  height: 220px;
+}
+
+.store a {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 28%;
+  border-radius: 3px;
+  letter-spacing: .2px;
+}
+
+.store a:hover {
+  background: #59a5af;
+  transition: .3s;
+}
+
+.store p {
+  padding: 0 9%;
+  margin-top: 7px;
+}
+
+.store h3 {
+  font-size: 1.5rem;
+}
+
+.prints {
+  width: 30%;
+  background: #f2f2f2;
+  margin: 0 1%;
+}
+
+.prints div {
+  height: 220px;
+}
+
+.prints a {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 28%;
+  border-radius: 3px;
+  letter-spacing: .2px;
+}
+
+.prints a:hover {
+  background: #59a5af;
+  transition: .3s;
+}
+
+.prints h3 {
+  font-size: 1.5rem;
+}
+
+.prints p {
+  padding: 0 9%;
+  margin-top: 7px;
+}
+
 
 /*======================================
 
@@ -340,9 +387,66 @@ footer img {
   }
 }
 
+@media(max-width: 320px) {
+  .gorey-who {
+    padding: 29px 0 15px;
+  }
+  .house div {
+    height: 260px;
+  }
+
+  .store div {
+    height: 240px;
+  }
+
+  .prints div {
+    height: 240px;
+  }
+
+  .house, .store, .prints {
+    width: 90%;
+    margin: 6px 1%;
+  }
+}
+
 @media(max-width: 385px) {
   .gorey-who h1 {
     font-size: 2.25rem;
+  }
+}
+
+@media(max-width: 620px) {
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .house, .store, .prints {
+    width: 90%;
+    margin: 15px 1%;
+  }
+
+  .museum h2 {
+    font-size: 2.25rem;
+    margin: 25px 0 15px;
+    letter-spacing: .5px;
+  }
+}
+
+@media(max-width: 700px) {
+  .house, .store, .prints {
+    margin: 30px 1%;
+  }
+
+  .house a {
+    padding: 10px 18%;
+  }
+
+  .store a {
+    padding: 10px 18%;
+  }
+
+  .prints a {
+    padding: 10px 18%;
   }
 }
 
@@ -369,5 +473,17 @@ footer img {
 
   header {
     padding: 12px 0 30px 10px;
+  }
+}
+
+@media(max-width: 950px) {
+  .house div {
+    height: 280px;
+  }
+  .store div {
+    height: 280px;
+  }
+  .prints div {
+    height: 280px;
   }
 }
