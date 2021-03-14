@@ -35,7 +35,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 12px 0 30px 10px;
+  padding: 12px 0 12px 10px;
   filter: drop-shadow(0px 0px 2px black);
 }
 
@@ -270,15 +270,21 @@ footer img {
     margin-top: 3%;
     display: none;
   }
-
+  .hamburger {
+    display: none;
+  }
+}
 
 @media(max-width: 900px) {
   .hero-image-section {
     max-width: 100%;
     display: none;
   }
-
   .desktop-menu {
     display: none;
-    }
+  }
+  
+  header {
+    padding: 12px 0 30px 10px;
+  }
 }
