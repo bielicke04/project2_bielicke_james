@@ -12,6 +12,7 @@
 
     <!--Main CSS StyleSheet-->
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/lightbox.css" type="text/css" rel="stylesheet" />
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,7 +25,7 @@
       <script src="js/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 
-    <!-- Scripts -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
@@ -82,37 +83,63 @@
 
       <div class="container2">
         <figure class="bio bio1">
-          <img src="images/bio-image-1.jpg" alt="Edward & Avy" title="Edward & Avy" />
+          <a href="images/bio-image-1.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-1.jpg" alt="Edward & Avy" title="Edward & Avy" /></a>
           <figcaption>Edward + Avy <span>|</span> 10.18.1992</figcaption>
         </figure>
 
         <figure class="bio bio2">
-          <img src="images/bio-image-2.jpg" alt="Martini Cookbook 1967" title="Martini Cookbook 1967" />
+          <a href="images/bio-image-2.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-2.jpg" alt="Martini Cookbook 1967" title="Martini Cookbook 1967" /></a>
           <figcaption>Martini Cookbook <span>|</span> 1967</figcaption>
         </figure>
 
         <figure class="bio bio3">
-          <img src="images/bio-image-3.jpg" alt="Edward Gorey NYC 1983" title="Edward Gorey NYC 1983" />
+          <a href="images/bio-image-3.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-3.jpg" alt="Edward Gorey NYC 1983" title="Edward Gorey NYC 1983" /></a>
           <figcaption>Edward Gorey <span>|</span> NYC 1983</figcaption>
         </figure>
 
         <figure class="bio bio4">
-          <img src="images/bio-image-4.jpg" alt="Devils & Demons 1987" title="Devils & Demons 1987" />
+          <a href="images/bio-image-4.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-4.jpg" alt="Devils & Demons 1987" title="Devils & Demons 1987" /></a>
           <figcaption>Devils + Demons <span>|</span> 1987</figcaption>
         </figure>
 
         <figure class="bio bio5">
-          <img src="images/bio-image-5.jpg" alt="Set of Dracula" title="Set of Dracula" />
+          <a href="images/bio-image-5.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-5.jpg" alt="Set of Dracula" title="Set of Dracula" /></a>
           <figcaption>Edward Gorey <span>|</span> 3.28.1980</figcaption>
         </figure>
 
         <figure class="bio bio6">
-          <img src="images/bio-image-6.jpg" alt="Christmas Tree June 1969" title="Christmas Tree June 1969" />
+          <a href="images/bio-image-6.jpg" data-lightbox="Edward Gorey & His Art"><img src="images/bio-image-6.jpg" alt="Christmas Tree June 1969" title="Christmas Tree June 1969" /></a>
           <figcaption>Christmas Tree June <span>|</span> 1969</figcaption>
         </figure>
       </div>
 
       <section class="section-break"></section>
+
+      <div class="container3">
+        <section class="museum" id="museum">
+          <h2>Edward Gorey House Museum</h2>
+          <div class="capecod city">
+            <img src="images/museum-image-1.jpg" alt="Outside the Gorey Home Museum" title="Outside the Gorey Home Museum" />
+            <h3>Gorey House Museum</h3>
+            <p>The Edward Gorey House celebrates and preserves the life and works of Edward Gorey, an American author, illustrator, playwright, set and costume designer.</p>
+            <a href="https://edwardgoreyhouse.org" target="_blank">Come Visit</a>
+          </div>
+
+          <div class="inside city">
+            <img src="images/museum-image-2.jpg" alt="Inside the Gorey Home Museum" title="Inside the Gorey Home Museum" />
+            <h3>The Gorey Store</h3>
+            <p>The Gorey Store carries many of Edward Gorey's in-print books, as well as posters, prints, and other accessories that display his distinct illustration style.</p>
+            <a href="https://goreystore.com" target="_blank">   Gorey Store   </a>
+          </div>
+
+          <div class="artworks city">
+            <img src="images/museum-image-3.jpg" alt="Gorey Art" title="Gorey Art" />
+            <h3>Ltd. Edition Etchings</h3>
+            <p>The Gorey Store is proud to offer limited edition etchings. Each are hand-pulled & printed at the atelier of Elizabeth Andrews of Newfield, NY.</p>
+            <a href="https://edwardgoreyhouse.org/pages/edward-gorey-etchings" target="_blank">Buy Etchings</a>
+          </div>
+        </section>
+      </div>
 
     </main>
 
@@ -124,10 +151,14 @@
 
         <a href="https://www.instagram.com/goreystore/" target="_blank"><img src="images/instagram.png" alt="instagram" title="Instagram" /></a>
 
-        <p>&#169;jbielicke 2021</p>
+        <p>Copyright &copy; jbielicke 2021</p>
       </div>
     </footer>
 
+    <!--JavaScript for Lightbox-->
+    <script src="js/lightbox.js"></script>
+
+    <!--JavaScript for Hamburger Menu-->
     <script src="js/hamburger.js"></script>
   </body>
 </html>

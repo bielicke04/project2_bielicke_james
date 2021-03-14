@@ -202,7 +202,90 @@ span {
 
 /*======================================
 
-        Middle Image Break
+        Museum Section
+
+=======================================*/
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  margin-bottom: .5%;
+}
+
+.museum {
+  padding: 26px 0px;
+}
+
+.museum h2 {
+  text-align: center;
+  font-size: 44px;
+  letter-spacing: 1px;
+}
+
+.city {
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f2f2f2;
+  width: 25%;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 35px 21px;
+}
+
+.city img {
+  width: 100%;
+}
+
+.capecod a {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 87px;
+  border-radius: 3px;
+  letter-spacing: .2px;
+}
+
+.inside a {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 84px;
+  border-radius: 3px;
+  letter-spacing: .2px;
+}
+
+.artworks a {
+  background: #333;
+  color: white;
+  text-decoration: none;
+  padding: 10px 80px;
+  border-radius: 3px;
+  letter-spacing: .2px;
+}
+
+.city a:hover {
+  background: #59a5af;
+  transition: .3s;
+}
+
+.city h3 {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+
+.city p {
+  text-align: left;
+  margin: 6px 0px 24px;
+  line-height: 22px;
+}
+
+/*======================================
+
+        Bottom Image Break
 
 =======================================*/
 
@@ -283,7 +366,7 @@ footer img {
   .desktop-menu {
     display: none;
   }
-  
+
   header {
     padding: 12px 0 30px 10px;
   }
