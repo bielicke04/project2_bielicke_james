@@ -365,10 +365,15 @@ span {
 =======================================*/
 
 .contact-section {
-  background: #f2f2f2;
+  background: #515151;
   padding: 2px 2% 21px;
   width: 69%;
   margin: 19px auto;
+  border-radius: 4.5px;
+}
+
+.contact-text {
+  color: #fff;
 }
 
 .container h2 {
@@ -421,9 +426,9 @@ select#state {
 
 .submit-bottom input {
   font-family: 'EB Garamond', serif;
-  font-size: 20px;
-  background: #333;
-  color: white;
+  font-size: 22px;
+  background: #f2f2f2;
+  color: #000;
   text-decoration: none;
   padding: 7px 28%;
   border-radius: 3px;
@@ -438,26 +443,9 @@ div#special {
 
 .submit-bottom input:hover {
   background: #59a5af;
+  color: #fff;
   transition: .3s;
 }
-
-.address p {
-  margin-top: 25px;
-  font-family: 'IM Fell English';
-  font-size: 16.5px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: .5px;
-}
-
-.address a {
-  text-decoration: none;
-  color: #5e7942;
-  font-family: 'EB Garamond';
-}
-
-
-
 
 
 /*======================================
